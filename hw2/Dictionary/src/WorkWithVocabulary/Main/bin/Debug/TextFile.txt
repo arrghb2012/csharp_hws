@@ -1,0 +1,25 @@
+C#
+
+Multiple inheritance is not supported, although a
+class can implement any number of interfaces. This
+was a design decision by the language's lead architect
+to avoid complication and simplify architectural requirements
+throughout CLI. When implementing multiple interfaces that
+contain a method with the same signature, C# allows the programmer
+to implement each method depending on which interface that method
+is being called through, or, like Java, allows the programmer
+to implement the method once and have that be the single
+invocation on a call through any of the class's interfaces.
+
+C#, unlike Java, supports operator overloading. Only the most
+commonly overloaded operators in C++ may be overloaded in C#.
+
+C# is more type safe than C++. The only implicit conversions
+by default are those that are considered safe, such as widening
+of integers. This is enforced at compile-time, during JIT, and,
+in some cases, at runtime. No implicit conversions occur between
+Booleans and integers, nor between enumeration members and integers
+(except for literal 0, which can be implicitly converted to any enumerated
+type). Any user-defined conversion must be explicitly marked as explicit or
+implicit, unlike C++ copy constructors and conversion operators, which
+are both implicit by default.
